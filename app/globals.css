@@ -68,40 +68,40 @@
   }
 }
 
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #2d1e0e;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a4713e;
+  background: #a76f3e;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9e7146;
+  background: #8b5a32;
 }
 
-/* Outlined text effect */
-.font-outline {
-  -webkit-text-stroke: 2px #a4713e;
-  -webkit-text-fill-color: transparent;
-  text-stroke: 2px #a4713e;
-  text-fill-color: transparent;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-@supports not (-webkit-text-stroke: 2px #a4713e) {
-  .font-outline {
-    color: #a4713e;
-    text-shadow: -2px -2px 0 #a4713e, 2px -2px 0 #a4713e, -2px 2px 0 #a4713e, 2px 2px 0 #a4713e;
-  }
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

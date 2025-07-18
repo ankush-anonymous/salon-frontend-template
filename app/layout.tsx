@@ -1,20 +1,24 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: "Luxe Salon - Premium Barbershop & Grooming Services",
+  description:
+    "Experience exceptional grooming services with our skilled craftsmen. Traditional techniques meet modern style at Luxe Salon.",
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

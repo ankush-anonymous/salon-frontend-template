@@ -39,7 +39,22 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section className="py-20 bg-[#FFF8EF]">
+
+    
+<section
+  id="services"
+  className="py-20 bg-[#2D1E0E] relative overflow-hidden bg-[url('/images/services-bg.png')] bg-cover bg-center"
+>        {/* Background Decorative Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 right-20 transform rotate-45">
+            <Scissors className="h-32 w-32 text-[#A4713E]" />
+          </div>
+          <div className="absolute bottom-20 left-20 transform -rotate-12">
+            <svg className="h-24 w-24 text-[#A4713E]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9M15 11.5C15.8 11.5 16.5 12.2 16.5 13S15.8 14.5 15 14.5 13.5 13.8 13.5 13 14.2 11.5 15 11.5M5 7V9L11 8.5V7H5ZM11 11.5C11.8 11.5 12.5 12.2 12.5 13S11.8 14.5 11 14.5 9.5 13.8 9.5 13 10.2 11.5 11 11.5Z" />
+            </svg>
+          </div>
+        </div>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,9 +63,9 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-gray-500 text-sm uppercase tracking-widest mb-4">SERVICES</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2B1B0C] mb-6">Our Barber Services</h2>
-          <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
+          <p className="text-[#A76F3E] text-sm uppercase tracking-widest mb-4">SERVICES</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#FFF8EF] mb-6">Our Barber Services</h2>
+          <p className="text-[#805530] text-lg max-w-4xl mx-auto leading-relaxed">
             Our Barber Services offer a comprehensive range, including stylish haircuts, rejuvenating hair treatments,
             therapeutic massages, and thorough hair cleaning, all designed to enhance your grooming experience and leave
             you feeling refreshed and renewed.

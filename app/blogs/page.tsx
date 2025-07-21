@@ -10,7 +10,8 @@ export default function BlogsPage() {
       title: "The Art of Traditional Wet Shaving",
       excerpt:
         "Discover the timeless techniques and benefits of traditional wet shaving that every gentleman should know.",
-      image: "/placeholder.svg?height=300&width=400&text=Wet+Shaving",
+      image:"/images/image-1.png"
+,
       author: "Marcus Johnson",
       date: "December 15, 2024",
       category: "Grooming Tips",
@@ -19,7 +20,7 @@ export default function BlogsPage() {
       title: "Choosing the Right Haircut for Your Face Shape",
       excerpt:
         "Learn how to select the perfect haircut that complements your unique facial features and personal style.",
-      image: "/placeholder.svg?height=300&width=400&text=Haircut+Guide",
+      image:"/images/image-2.png",
       author: "David Rodriguez",
       date: "December 10, 2024",
       category: "Style Guide",
@@ -27,7 +28,7 @@ export default function BlogsPage() {
     {
       title: "Beard Care Essentials: A Complete Guide",
       excerpt: "Everything you need to know about maintaining a healthy, well-groomed beard from start to finish.",
-      image: "/placeholder.svg?height=300&width=400&text=Beard+Care",
+      image:"/images/image-4.png",
       author: "James Wilson",
       date: "December 5, 2024",
       category: "Beard Care",
@@ -36,7 +37,7 @@ export default function BlogsPage() {
       title: "The Evolution of Men's Grooming",
       excerpt:
         "A journey through the history of men's grooming and how modern techniques have evolved from traditional practices.",
-      image: "/placeholder.svg?height=300&width=400&text=Grooming+History",
+      image:"/images/image-5.png",
       author: "Michael Brown",
       date: "November 28, 2024",
       category: "History",
@@ -44,7 +45,7 @@ export default function BlogsPage() {
     {
       title: "Seasonal Hair Care Tips",
       excerpt: "Adapt your hair care routine to the changing seasons and keep your hair healthy year-round.",
-      image: "/placeholder.svg?height=300&width=400&text=Seasonal+Care",
+      image:"/images/image-6.png",
       author: "Marcus Johnson",
       date: "November 20, 2024",
       category: "Hair Care",
@@ -52,7 +53,7 @@ export default function BlogsPage() {
     {
       title: "Professional Grooming vs. DIY: What You Need to Know",
       excerpt: "Understanding when to visit a professional and what you can effectively manage at home.",
-      image: "/placeholder.svg?height=300&width=400&text=Professional+vs+DIY",
+      image:"/images/image-7.png",
       author: "David Rodriguez",
       date: "November 15, 2024",
       category: "Tips",

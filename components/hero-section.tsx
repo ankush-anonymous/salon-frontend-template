@@ -1,18 +1,25 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#2B1B0C]">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#A76F3E]/20 to-transparent" />
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-section-banner.png"
+          alt="Financial services background"
+          fill
+          priority
+          className="object-cover object-[60%_top]"
+        />
+        {/* Optional dark overlay for better contrast */}
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <div className="container mx-auto px-6 py-20">
+      {/* ✅ Foreground Content */}
+      <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -43,8 +50,9 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg md:text-xl leading-relaxed mb-8 text-gray-300 max-w-lg"
             >
-              A barber is a person whose occupation is mainly to cut, dress, groom, style and shave men's and boys'
-              hair. A barber's place of work is known as a "barbershop" or a "barber's".
+              A barber is a person whose occupation is mainly to cut, dress,
+              groom, style and shave men's and boys' hair. A barber's place of
+              work is known as a "barbershop" or a "barber's".
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -60,6 +68,7 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Right Content - Phone Mockups */}
+          {/*
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -67,7 +76,7 @@ export default function HeroSection() {
             className="relative"
           >
             <div className="flex gap-6 justify-center">
-              {/* First Phone */}
+            
               <div className="relative">
                 <div className="w-64 h-96 bg-black rounded-3xl p-2 shadow-2xl transform rotate-6">
                   <div className="w-full h-full bg-gray-900 rounded-2xl overflow-hidden">
@@ -80,7 +89,6 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Second Phone */}
               <div className="relative -mt-8">
                 <div className="w-64 h-96 bg-black rounded-3xl p-2 shadow-2xl transform -rotate-6">
                   <div className="w-full h-full bg-gray-900 rounded-2xl overflow-hidden">
@@ -94,8 +102,9 @@ export default function HeroSection() {
               </div>
             </div>
           </motion.div>
+          */}
         </div>
       </div>
     </section>
-  )
+  );
 }

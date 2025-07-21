@@ -27,19 +27,19 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="/placeholder.svg?height=300&width=250&text=Barber+Work"
+                  src="/images/image-3.png"
                   alt="Barber at work"
-                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg bg-fill"
                 />
                 <img
-                  src="/placeholder.svg?height=200&width=250&text=Salon+Interior"
+                  src="/images/image-4.png"
                   alt="Salon interior"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="mt-8">
                 <img
-                  src="/placeholder.svg?height=400&width=250&text=Professional+Service"
+                  src="/images/image-9.png"
                   alt="Professional service"
                   className="w-full h-80 object-cover rounded-lg shadow-lg"
                 />

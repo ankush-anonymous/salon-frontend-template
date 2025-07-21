@@ -5,15 +5,15 @@ import { Instagram } from "lucide-react"
 
 export default function InstagramGallery() {
   const images = [
-    "/placeholder.svg?height=300&width=300&text=Barber+1",
-    "/placeholder.svg?height=300&width=300&text=Barber+2",
-    "/placeholder.svg?height=300&width=300&text=Barber+3",
-    "/placeholder.svg?height=300&width=300&text=Barber+4",
-    "/placeholder.svg?height=300&width=300&text=Barber+5",
-    "/placeholder.svg?height=300&width=300&text=Barber+6",
-    "/placeholder.svg?height=300&width=300&text=Barber+7",
-    "/placeholder.svg?height=300&width=300&text=Barber+8",
-    "/placeholder.svg?height=300&width=300&text=Barber+9",
+    "/images/image-1.png",
+    "/images/image-2.png",
+    "/images/image-3.png",
+    "/images/image-4.png",
+    "/images/image-5.png",
+    "/images/image-6.png",
+    "/images/image-7.png",
+    "/images/image-8.png",
+    "/images/image-9.png",
   ]
 
   return (

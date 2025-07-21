@@ -43,7 +43,7 @@ export default function AboutPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-[#2B1B0C]">
+      <section className="pt-24 pb-16 bg-[#2B1B0C] bg-[url('/images/services-bg.png')] bg-cover bg-center">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -57,7 +57,7 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <img
-                src="/placeholder.svg?height=400&width=600&text=Barbershop+Interior"
+                src="/images/image-1.png"
                 alt="Barbershop interior"
                 className="w-full h-80 object-cover rounded-lg shadow-2xl"
               />
@@ -92,12 +92,12 @@ export default function AboutPage() {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/placeholder.svg?height=300&width=250&text=Vintage+Tools"
+                  src="/images/image-3.png"
                   alt="Vintage barber tools"
                   className="w-full h-64 object-cover rounded-lg shadow-lg"
                 />
                 <img
-                  src="/placeholder.svg?height=400&width=250&text=Master+at+Work"
+                  src="/images/image-9.png"
                   alt="Master barber at work"
                   className="w-full h-80 object-cover rounded-lg shadow-lg mt-8"
                 />
